@@ -1,0 +1,260 @@
+/* ==========================
+GLOBAL RESET
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ==========================
+BODY
+========================== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #333;
+    line-height: 1.6;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================
+LINKS
+========================== */
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+/* ==========================
+LISTS
+========================== */
+
+ul,
+ol{
+list-style-position:inside;
+}
+
+/* ==========================
+HEADINGS
+========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin-bottom:10px;
+}
+
+/* ==========================
+PARAGRAPHS
+========================== */
+
+p{
+margin-bottom:15px;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+background:linear-gradient(
+135deg,
+#2563eb,
+#1e3a8a
+);
+
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 50px;
+
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.logo{
+color:white;
+font-size:2rem;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+font-weight:600;
+transition:.3s;
+}
+main{
+    flex: 1;
+}
+
+.nav-links a:hover
+
+/* ==========================
+COMMON BUTTONS
+========================== */
+
+.btn{
+display:inline-block;
+
+
+background:#2563eb;
+color:white;
+
+padding:12px 24px;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.btn:hover
+
+/* ==========================
+COMMON SECTION
+========================== */
+
+section{
+padding:60px 20px;
+}
+
+/* ==========================
+COMMON CONTAINER
+========================== */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* ==========================
+IMAGES
+========================== */
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* ==========================
+TABLES
+========================== */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,
+td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+th{
+background:#1e3a8a;
+color:white;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+background:#1e3a8a;
+color:white;
+
+
+text-align:center;
+
+padding:25px;
+margin-top:40px;
+
+
+}
+
+/* ==========================
+SHARED CARD STYLE
+========================== */
+
+.card{
+background:white;
+
+
+border-radius:12px;
+
+padding:25px;
+
+box-shadow:
+    0 4px 15px rgba(0,0,0,.08);
+
+
+}
+
+/* ==========================
+SHARED ANIMATION
+========================== */
+
+.fade-in{
+animation:fadeIn .8s ease-in-out;
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* ==========================
+MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+    gap:12px;
+}
+
+.logo{
+    font-size:1.6rem;
+}
+}

@@ -1,0 +1,185 @@
+/* ==========================
+PROJECTS PAGE STYLES
+projects.css
+========================== */
+
+/* Header Section */
+
+.projects-header{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(
+135deg,
+#eff6ff,
+#dbeafe
+);
+}
+
+.projects-header h2{
+font-size:2.5rem;
+color:#1e3a8a;
+margin-bottom:15px;
+}
+
+.projects-header p{
+max-width:700px;
+margin:auto;
+color:#555;
+line-height:1.8;
+}
+
+/* Projects Grid */
+
+.projects-container{
+max-width:1200px;
+margin:auto;
+
+
+display:grid;
+
+grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+gap:30px;
+
+padding:60px 20px;
+
+
+}
+
+/* Project Card */
+
+.project-card{
+background:white;
+
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+/* Project Images */
+
+.project-image{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+/* Content */
+
+.project-card h3{
+padding:20px 20px 10px;
+color:#1e3a8a;
+}
+
+.project-card p{
+padding:0 20px 20px;
+color:#555;
+line-height:1.7;
+}
+
+/* Project Button */
+
+.project-btn{
+display:inline-block;
+
+
+margin:0 20px 20px;
+
+background:#2563eb;
+color:white;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.project-btn:hover
+
+/* Technologies Section */
+
+.project-skills{
+padding:60px 20px;
+text-align:center;
+}
+
+.project-skills h2{
+color:#1e3a8a;
+margin-bottom:25px;
+text-align: center;
+}
+
+.project-skills ul{
+max-width:600px;
+margin:auto;
+
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+
+}
+
+.project-skills li{
+padding:10px;
+font-weight:500;
+}
+
+/* Animation */
+
+.project-card{
+animation:fadeIn .8s ease-in-out;
+}
+
+@keyframes fadeIn{
+
+
+from{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+
+.projects-header h2{
+    font-size:2rem;
+}
+
+.project-image{
+    height:180px;
+}
+
+.projects-container{
+    padding:30px 15px;
+}
+}

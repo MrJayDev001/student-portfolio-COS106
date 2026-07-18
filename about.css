@@ -1,0 +1,244 @@
+/* ==========================
+   ABOUT PAGE STYLES
+========================== */
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about-section{
+    padding:60px 20px;
+    background:linear-gradient(135deg,#eff6ff,#dbeafe);
+}
+
+.about-section h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.about-content{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+}
+
+.about-image{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    flex-shrink:0;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    font-size:1.1rem;
+    line-height:1.9;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   EDUCATION
+========================== */
+
+.education{
+    padding:60px 20px;
+}
+
+.education h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e3a8a;
+}
+
+.education ul{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.education li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+/* ==========================
+   CAREER
+========================== */
+
+.career{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.career h2{
+    margin-bottom:25px;
+    color:#1e3a8a;
+}
+
+.career p{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    line-height:1.8;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills-section{
+    padding:60px 20px;
+}
+
+.skills-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1e3a8a;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.skill-box{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   HOBBIES
+========================== */
+
+.hobbies{
+    padding:60px 20px;
+}
+
+.hobbies h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e3a8a;
+}
+
+.hobbies ol{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.hobbies li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+/* ==========================
+   QUOTE
+========================== */
+
+.quote{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.quote blockquote{
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    background:#1e3a8a;
+    color:white;
+    border-radius:12px;
+    font-size:1.2rem;
+    font-style:italic;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+.about-section,
+.education,
+.career,
+.skills-section,
+.hobbies,
+.quote{
+    animation:fadeIn .8s ease-in-out;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .about-content{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .about-image{
+        width:180px;
+        height:180px;
+    }
+
+    .about-text p{
+        text-align:center;
+        font-size:1rem;
+    }
+
+    .about-section h2{
+        font-size:2rem;
+    }
+
+    .quote blockquote{
+        font-size:1rem;
+    }
+
+}
